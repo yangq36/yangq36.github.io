@@ -1,0 +1,556 @@
+﻿<!DOCTYPE html>
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<script>
+function getCookie(name){ 
+var strCookie=document.cookie; 
+var arrCookie=strCookie.split("; "); 
+for(var i=0;i<arrCookie.length;i++){ 
+var arr=arrCookie[i].split("="); 
+if(arr[0]==name)return arr[1]; 
+} 
+return ""; 
+} 
+
+if(getCookie("name")!="love")
+{
+	window.location.href="/";
+}
+</script>
+
+
+
+<title>我爱你</title>
+<link type="text/css" rel="stylesheet" href="love/default.css">
+<script type="text/javascript" src="love/jquery.min.js"></script>
+<script type="text/javascript" src="love/jscex.min.js"></script>
+<script type="text/javascript" src="love/jscex-parser.js"></script>
+<script type="text/javascript" src="love/jscex-jit.js"></script>
+<script type="text/javascript" src="love/jscex-builderbase.min.js"></script>
+<script type="text/javascript" src="love/jscex-async.min.js"></script>
+<script type="text/javascript" src="love/jscex-async-powerpack.min.js"></script>
+<script type="text/javascript" src="love/functions.js" charset="utf-8"></script>
+<script type="text/javascript" src="love/love.js" charset="utf-8"></script>
+<style type="text/css">
+<!--
+.STYLE1 {
+	color: #FF4500
+}
+-->
+
+#tagsList { position:relative; width:600px; height:600px; margin: auto auto;}
+#tagsList a {position:absolute; top:0px; left:0px; font-family: Microsoft YaHei; color:#fff;text-decoration:none; padding: 3px 6px; }
+#tagsList a:hover { color:#FF0000; letter-spacing:2px;}
+
+</style>
+
+</head>
+<body>
+<audio autoplay="autopaly" loop="loop">
+  <source src="love.mp3" type="audio/mp3" />
+</audio>
+<div id="main">
+  <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
+  
+  
+  
+  
+  <div id="wrap">
+    <div id="text">
+      <div id="code"> <font color="#CC0000" size="4"> 
+		<span class="say"> </span><br>
+		<span class="say">亲爱的茜茜，我爱你</span><br>       
+		<span class="say"> </span><br>
+        <span class="say"> 我知道我不会甜言蜜语</span><br>
+        <span class="say"> 但是我会用行动证明一切</span><br>
+        <span class="say"> </span><br>
+		<span class="say"> </span><br>
+        <span class="say">执子之手，与子偕老</span><br>
+        <span class="say"> </span><br>
+		<span class="say"> </span><br>
+        <span class="say">如果上天让我许三个愿望:</span><br>
+        <span class="say">第一个是今生今世和你在一起 </span><br>
+		<span class="say">第二个是再生再世和你在一起</span><br>
+		<span class="say">第三个是永生永世和你不分离 </span><br>
+		<span class="say"> </span><br>
+		<span class="say"> </span><br>
+        <span class="say"><span class="space"></span> —— 爱你的老公</span> </font>
+      </div>
+    </div>
+    
+    <div id="clock-box"> <font color="#FF0000">亲爱的茜茜，我爱你</font> <span class="STYLE1">已经是……</span>
+      <div id="clock"></div>
+    </div>
+	
+    <canvas id="canvas" width="10" height="18" style="position:absolute; z-index: 99"></canvas>
+	
+		<div id="tagsList">
+		
+        <span><a>茜茜</a></span>
+        <span><a>我爱你</a></span>
+        <span><a>你是不是喜欢2班一个女生</a></span>
+        <span><a>怎么会觉得你烦呢。真的很高兴听你这样说</a></span>
+        <span><a>晚上上自习吗</a></span>
+        <span><a>我喜欢你。别人怎么看，我不管。我听你的</a></span>
+        <span><a>你很温暖乐观，和你在一块，我很幸福</a></span>
+        <span><a>今晚好好睡吧！爱你～</a></span>
+        <span><a>晚安！mua～</a></span>
+        <span><a>2013.5.7</a></span>
+        <span><a>我一定一定一定要珍惜</a></span>
+        <span><a>能够遇到你，我觉得我真的很幸运，很幸福</a></span>
+        <span><a>其实我也不太会爱，我们可以一起学习啊</a></span>
+        <span><a>XQQ爱YQQ啦</a></span>
+        <span><a>拜托你一件事啊，不管你是否或即将听到关于我的八卦，都不要跟你妈说哟</a></span>
+        <span><a>我的160条免费短信都浪费在你这儿了</a></span>
+        <span><a>不过有你在，感觉什么也无所谓了</a></span>
+        <span><a>明天真不想见到你………………………………………因为，见到你就要考试了～晚安－by爱你的和不知道你爱不爱的XQQ</a></span>
+        <span><a>永远爱你</a></span>
+        <span><a>能够遇到你，我甚至会觉得这可能是个梦</a></span>
+        <span><a>不管怎么样，能和你在一起我觉得，我很幸福</a></span>
+        <span><a>能和你在一块干啥都好</a></span>
+        <span><a>In a word，爱你～</a></span>
+        <span><a>要抓你去上自习哟</a></span>
+        <span><a>那我就等你回来抓我去上自习</a></span>
+        <span><a>我不能错过你</a></span>
+        <span><a>YQQ爱XQQ</a></span>
+        <span><a>我会一直陪着你</a></span>
+		
+		</div>
+	
+	
+	
+  </div>
+</div>
+
+
+<script>
+
+;(
+
+function(){
+var colorArr = ['#FF66FF','#FF00CC','#FF0066','#CC00CC','##FF1493'];
+
+
+var radius = 250;
+var dtr = Math.PI/180;
+var d=300;
+var mcList = [];
+var active = false;
+var lasta = 1;
+var lastb = 1;
+var distr = true;
+var tspeed=10;
+var size=250;
+
+var mouseX=0;
+var mouseY=0;
+
+var howElliptical=1;
+
+var aA=null;
+var oDiv=null;
+
+
+var oCanvas=null;
+
+window.onload=function ()
+{
+    var i=0;
+    var oTag=null;
+
+    oDiv=document.getElementById('tagsList'); oCanvas=document.getElementById('canvas');
+
+    aA=oDiv.getElementsByTagName('a');
+
+    for(i=0;i<aA.length;i++)
+    {
+        oTag={};
+
+        oTag.offsetWidth=aA[i].offsetWidth;
+        oTag.offsetHeight=aA[i].offsetHeight;
+		
+
+        mcList.push(oTag);
+		
+		aA[i].style.color=colorArr[Math.round(Math.random()*3)];
+    }
+
+    sineCosine( 0,0,0 );
+
+    positionAll();
+
+    oCanvas.onmouseover=function ()
+    {
+        active=true;
+    };
+
+    oCanvas.onmouseout=function ()
+    {
+        active=false;
+    };
+
+    oCanvas.onmousemove=function (ev)
+    {
+        var oEvent=window.event || ev;
+
+        mouseX=oEvent.clientX-(oDiv.offsetLeft+oDiv.offsetWidth/2);
+        mouseY=oEvent.clientY-(oDiv.offsetTop+oDiv.offsetHeight/2);
+
+        mouseX/=5;
+        mouseY/=5;
+    };
+
+    setInterval(update, 30);
+};
+
+function update()
+{
+    var a;
+    var b;
+
+    if(active)
+    {
+        a = (-Math.min( Math.max( -mouseY, -size ), size ) / radius ) * tspeed;
+        b = (Math.min( Math.max( -mouseX, -size ), size ) / radius ) * tspeed;
+    }
+    else
+    {
+        a = lasta * 0.98;
+        b = lastb * 0.98;
+    }
+
+    lasta=a;
+    lastb=b;
+
+    if(Math.abs(a)<=0.01 && Math.abs(b)<=0.01)
+    {
+        return;
+    }
+
+    var c=0;
+    sineCosine(a,b,c);
+    for(var j=0;j<mcList.length;j++)
+    {
+        var rx1=mcList[j].cx;
+        var ry1=mcList[j].cy*ca+mcList[j].cz*(-sa);
+        var rz1=mcList[j].cy*sa+mcList[j].cz*ca;
+
+        var rx2=rx1*cb+rz1*sb;
+        var ry2=ry1;
+        var rz2=rx1*(-sb)+rz1*cb;
+
+        var rx3=rx2*cc+ry2*(-sc);
+        var ry3=rx2*sc+ry2*cc;
+        var rz3=rz2;
+
+        mcList[j].cx=rx3;
+        mcList[j].cy=ry3;
+        mcList[j].cz=rz3;
+
+        per=d/(d+rz3);
+
+        mcList[j].x=(howElliptical*rx3*per)-(howElliptical*2);
+        mcList[j].y=ry3*per;
+        mcList[j].scale=per;
+        mcList[j].alpha=per;
+
+        mcList[j].alpha=(mcList[j].alpha-0.6)*(10/6);
+    }
+
+    doPosition();
+    depthSort();
+}
+
+function depthSort()
+{
+    var i=0;
+    var aTmp=[];
+
+    for(i=0;i<aA.length;i++)
+    {
+        aTmp.push(aA[i]);
+    }
+
+    aTmp.sort
+    (
+        function (vItem1, vItem2)
+        {
+            if(vItem1.cz>vItem2.cz)
+            {
+                return -1;
+            }
+            else if(vItem1.cz<vItem2.cz)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+    );
+
+    for(i=0;i<aTmp.length;i++)
+    {
+        aTmp[i].style.zIndex=i;
+    }
+}
+
+function positionAll()
+{
+    var phi=0;
+    var theta=0;
+    var max=mcList.length;
+    var i=0;
+
+    var aTmp=[];
+    var oFragment=document.createDocumentFragment();
+
+    //随机排序
+    for(i=0;i<aA.length;i++)
+    {
+        aTmp.push(aA[i]);
+    }
+
+    aTmp.sort
+    (
+        function ()
+        {
+            return Math.random()<0.5?1:-1;
+        }
+    );
+
+    for(i=0;i<aTmp.length;i++)
+    {
+        oFragment.appendChild(aTmp[i]);
+    }
+
+    oDiv.appendChild(oFragment);
+
+    for( var i=1; i<max+1; i++){
+        if( distr )
+        {
+            phi = Math.acos(-1+(2*i-1)/max);
+            theta = Math.sqrt(max*Math.PI)*phi;
+        }
+        else
+        {
+            phi = Math.random()*(Math.PI);
+            theta = Math.random()*(2*Math.PI);
+        }
+        //坐标变换
+        mcList[i-1].cx = radius * Math.cos(theta)*Math.sin(phi);
+        mcList[i-1].cy = radius * Math.sin(theta)*Math.sin(phi);
+        mcList[i-1].cz = radius * Math.cos(phi);
+
+        aA[i-1].style.left=mcList[i-1].cx+oDiv.offsetWidth/2-mcList[i-1].offsetWidth/2+'px';
+        aA[i-1].style.top=mcList[i-1].cy+oDiv.offsetHeight/2-mcList[i-1].offsetHeight/2+'px';
+    }
+}
+
+function doPosition()
+{
+    var l=oDiv.offsetWidth/2;
+    var t=oDiv.offsetHeight/2;
+    for(var i=0;i<mcList.length;i++)
+    {
+        aA[i].style.left=mcList[i].cx+l-mcList[i].offsetWidth/2+'px';
+        aA[i].style.top=mcList[i].cy+t-mcList[i].offsetHeight/2+'px';
+
+        aA[i].style.fontSize=Math.ceil(12*mcList[i].scale/2)+8+'px';
+
+        aA[i].style.filter="alpha(opacity="+100*mcList[i].alpha+")";
+        aA[i].style.opacity=mcList[i].alpha;
+    }
+}
+
+function sineCosine( a, b, c)
+{
+    sa = Math.sin(a * dtr);
+    ca = Math.cos(a * dtr);
+    sb = Math.sin(b * dtr);
+    cb = Math.cos(b * dtr);
+    sc = Math.sin(c * dtr);
+    cc = Math.cos(c * dtr);
+}
+
+
+})();
+
+</script>
+
+
+<script>
+    (function () {
+        var canvas = $('#canvas');
+
+        if (!canvas[0].getContext) {
+            $("#error").show();
+            return false;
+        }
+
+        var width = canvas.width();
+        var height = canvas.height();
+        canvas.attr("width", width);
+        canvas.attr("height", height);
+        var opts = {
+            seed: {
+                x: width / 2 - 20,
+                color: "rgb(190, 26, 37)",
+                scale: 2
+            },
+            branch: [
+                [535, 680, 570, 250, 500, 200, 30, 100, [
+                    [540, 500, 455, 417, 340, 400, 13, 100, [
+                        [450, 435, 434, 430, 394, 395, 2, 40]
+                    ]],
+                    [550, 445, 600, 356, 680, 345, 12, 100, [
+                        [578, 400, 648, 409, 661, 426, 3, 80]
+                    ]],
+                    [539, 281, 537, 248, 534, 217, 3, 40],
+                    [546, 397, 413, 247, 328, 244, 9, 80, [
+                        [427, 286, 383, 253, 371, 205, 2, 40],
+                        [498, 345, 435, 315, 395, 330, 4, 60]
+                    ]],
+                    [546, 357, 608, 252, 678, 221, 6, 100, [
+                        [590, 293, 646, 277, 648, 271, 2, 80]
+                    ]]
+                ]]
+            ],
+            bloom: {
+                num: 700,
+                width: 1080,
+                height: 650,
+            },
+            footer: {
+                width: 1200,
+                height: 5,
+                speed: 10,
+            }
+        }
+
+        var tree = new Tree(canvas[0], width, height, opts);
+        var seed = tree.seed;
+        var foot = tree.footer;
+        var hold = 1;
+
+        canvas.click(function (e) {
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            if (seed.hover(x, y)) {
+                hold = 0;
+                canvas.unbind("click");
+				canvas.unbind("mousemove");
+                canvas.removeClass('hand');
+				
+				var my = document.getElementById("tagsList");
+				my.parentNode.removeChild(my);
+            }
+        }).mousemove(function (e) {
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            canvas.toggleClass('hand', seed.hover(x, y));
+        });
+
+
+        var seedAnimate = eval(Jscex.compile("async", function () {
+            seed.draw();
+            while (hold) {
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canScale()) {
+                seed.scale(0.95);
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canMove()) {
+                seed.move(0, 2);
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+        }));
+
+        var growAnimate = eval(Jscex.compile("async", function () {
+            do {
+                tree.grow();
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canGrow());
+        }));
+
+        var flowAnimate = eval(Jscex.compile("async", function () {
+            do {
+                tree.flower(2);
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canFlower());
+        }));
+
+        var moveAnimate = eval(Jscex.compile("async", function () {
+            tree.snapshot("p1", 240, 0, 610, 680);
+            while (tree.move("p1", 500, 0)) {
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+            foot.draw();
+            tree.snapshot("p2", 500, 0, 610, 680);
+	
+            // 会有闪烁不得意这样做, (＞﹏＜)
+            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+	//alert("0");
+            //canvas.css("background", "#ffe");
+	//alert("1");
+            $await(Jscex.Async.sleep(300));
+	//alert("2");
+            canvas.css("background", "none");
+	//alert("3");
+        }));
+
+        var jumpAnimate = eval(Jscex.compile("async", function () {
+            var ctx = tree.ctx;
+            while (true) {
+                tree.ctx.clearRect(0, 0, width, height);
+                tree.jump();
+                foot.draw();
+                $await(Jscex.Async.sleep(25));
+            }
+        }));
+
+        var textAnimate = eval(Jscex.compile("async", function () {
+            var together = new Date();
+            together.setFullYear(2013,5-1,07); 			//时间年月日
+            together.setHours(20);						//小时	
+            together.setMinutes(0);					//分钟
+            together.setSeconds(0);					//秒前一位
+            together.setMilliseconds(0);				//秒第二位
+
+            $("#code").show().typewriter();
+            $("#clock-box").fadeIn(500);
+            while (true) {
+                timeElapse(together);
+                $await(Jscex.Async.sleep(1000));
+            }
+        }));
+
+        var runAsync = eval(Jscex.compile("async", function () {
+            $await(seedAnimate());
+            $await(growAnimate());
+            $await(flowAnimate());
+				
+            $await(moveAnimate());
+	
+            textAnimate().start();
+
+            $await(jumpAnimate());
+        }));
+
+        runAsync().start();
+    })();
+    </script>
+
+
+</body>
+</html>
