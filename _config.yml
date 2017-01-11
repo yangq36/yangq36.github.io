@@ -5,7 +5,7 @@ pygments: true
 paginate: 8
 permalink: /:title
 
-title: YQ36.tk
-url: http://yq36.tk
+title: YangQian.site
+url: http://YangQian.site
 feed: /atom.xml
-author_info: <a href="http://yq36.tk/">YangQian</a>
+author_info: <a href="http://YangQian.site/">YangQian</a>
